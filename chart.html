@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chart.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<body>
+    <div class="header">
+        <img src="Image/SmartHome_3.png" alt="" class="Image_Logo">
+        <div class="data">
+            <a class="text_data" href="chart.html">Data</a>
+        </div>
+        <div class="control_header">
+            <a class="text_control" href="main.html">Control</a>
+        </div>
+        <a class="login" href="login.html">
+            <img class="Image_login" src="Image/user_2.png" alt="">
+            <div class="text_login">
+                Login
+            </div>
+        </a>
+    </div>
+    <div class="option">
+        <a class="livingroom" href="">
+            <div class="text_room">
+                Livingroom
+            </div>
+        </a>
+        <a class="bedroom" href="">
+            <div class="text_room">
+                Bedroom
+            </div>
+        </a>
+        <a class="kitchen" href="">
+            <div class="text_room">
+                Kitchen
+            </div>
+        </a>
+        <a class="garden" href="">
+            <div class="text_room">
+                Garden
+            </div>
+        </a>
+        <input class="datatime" id="datetime" type="date">
+    </div>
+    <div class="infomation" id="infomation" style="display: none;">
+        <div class="index_chart">
+            <canvas id="bar-chart-bedroom" style="display: none;"></canvas>
+            <canvas id="bar-chart-bedroom-1" style="display: none;"></canvas>
+            <canvas id="bar-chart-bedroom-2" style="display: none;"></canvas>
+        </div> 
+        <div class="index_chart">
+            <canvas id="bar-chart-kitchen" style="display: none;"></canvas>
+            <canvas id="bar-chart-kitchen-1" style="display: none;"></canvas>
+            <canvas id="bar-chart-kitchen-2" style="display: none;"></canvas>
+        </div> 
+        <div class="index_chart">
+            <canvas id="bar-chart-livingroom" style="display: none;"></canvas>
+            <canvas id="bar-chart-livingroom-1" style="display: none;"></canvas>
+            <canvas id="bar-chart-livingroom-2" style="display: none;"></canvas>
+        </div> 
+        <div class="index_chart">
+            <canvas id="bar-chart-garden" style="display: none;"></canvas>
+            <canvas id="bar-chart-garden-1" style="display: none;"></canvas>
+            <canvas id="bar-chart-garden-2" style="display: none;"></canvas>
+        </div> 
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+<script src="chart.js"></script>
+</html>
